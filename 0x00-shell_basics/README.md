@@ -1,1 +1,1 @@
-script prints the current working directory
+Dosplays the contents of the current directory
