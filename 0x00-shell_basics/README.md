@@ -1,1 +1,1 @@
-Script changes the working directory to the user home directory
+Displays directory content in a long format
