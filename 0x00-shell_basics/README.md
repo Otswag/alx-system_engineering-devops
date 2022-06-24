@@ -1,1 +1,1 @@
-Display current directory contents, including hidden files
+move the file betty to another directory
