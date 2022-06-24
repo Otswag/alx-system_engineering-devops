@@ -1,1 +1,1 @@
-Dosplays the contents of the current directory
+Script changes the working directory
