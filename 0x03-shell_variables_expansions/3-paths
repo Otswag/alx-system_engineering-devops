@@ -1,2 +1,2 @@
 #!/bin/bash
-alx-system_engineering-devops
+echo $PATH | tr -s ":" "\n" | wc -l
