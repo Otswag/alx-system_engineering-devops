@@ -33,21 +33,21 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-# start of parameters for alz254.tech
-frontend alz254.tech-http-frontend
+# start of parameters for otswag.tech
+frontend otswag.tech-http-frontend
 	bind	 *:80
 	http-request set-header X-Forwarded-Proto http
-	default_backend	 alz254.tech-backend
+	default_backend	 otswag.tech-backend
 
 
-frontend  alz254.tech-https-frontend
+frontend  otswag.tech-https-frontend
 	bind *:443 ssl crt /etc/ssl/beta-scribbles.tech.pem
 	http-request set-header X-Forwarded-Proto https
         default_backend alz254.tech-backend
 
 
-backend alz254.tech-backend
+backend otswag.tech-backend
         balance roundrobin
-        server 914-web-01 18.210.13.108:80 check
-        server 914-web-02 100.25.163.244:80 check
+        server 73379-web-01 52.72.8.186:80 check
+        server 73379-web-02 3.85.141.116:80 check
 # end of parameters
