@@ -43,7 +43,7 @@ frontend otswag.tech-http-frontend
 frontend  otswag.tech-https-frontend
 	bind *:443 ssl crt /etc/ssl/beta-scribbles.tech.pem
 	http-request set-header X-Forwarded-Proto https
-        default_backend alz254.tech-backend
+        default_backend otswag.tech-backend
 
 
 backend otswag.tech-backend
