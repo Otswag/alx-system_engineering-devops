@@ -38,8 +38,8 @@ listen http-incoming
         balance roundrobin
         bind :80
         option forwardfor
-        server 4386-web-01 34.227.46.143
-        server 4386-web-02 18.234.112.14
+        server 73379-web-01 52.72.8.186
+        server 73379-web-02 3.85.141.116
 
 frontend www-http
         mode http
@@ -53,5 +53,5 @@ frontend www-https
 
 backend servers
         http-request redirect scheme https code 301 if !{ ssl_fc }
-        server 4386-web-01 34.227.46.143:80
-        server 4386-web-02 18.234.112.14:80
+        server 73379-web-01 52.72.8.186:80
+        server 73379-web-02 3.85.141.116:80
