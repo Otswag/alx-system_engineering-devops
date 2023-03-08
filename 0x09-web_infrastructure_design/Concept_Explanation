@@ -1,0 +1,49 @@
+# Web Stack Design infastructure
+* Details explaination of the above web stack design
+1. ** Server **
+The server is compose of hardware or a software that are design to provides functionalities of otehr programs.
+In the diagram the client sent request through the Lamp to get access to information which could only be retrieve if
+the iformation is on the server...
+
+2. ** Domain name **
+Domain name is unique name give to a computer which has n IP Adress of a specific computer on the internet.
+From the picture a client use a domain name called www.foobar.com which has an IP Adress of 8.8.8.8
+
+3. ** The type of DNS record www is in www.foobar.com is a CNAME **
+CNAME is a type of resource record in Domain Name System
+
+4. ** The role of the web Server **
+The role of the web server is to send or request information through the Application files, App Servers from the Database.
+
+5. ** Role of Application Server **
+The role of the application server is to send data back and forth to the web server and the database.
+
+6. ** Role of the Database **
+The role of the database is to store data, that can be modifies, update, or request from a clinet.
+
+7. The is using HyperText Transfer Protocol (HTTP).
+
+8. SPOF is Single Point of Failure
+SPOF is any non-reduadant part of a system that, if dyfunctional, would cause the entire system to fail.
+
+9. If a system is having a downtime, it diffiicult to access it, so what the system does is to send a message of to the main pasge so whoever access will know what is going on.
+
+10. In computing, whenever is a heavy request of data or access to a files, there will be a great impact on the network which will cause unexpected traffic.
+
+1. For every additional element, adding another server to existing server increase the services and connections which
+which will supports and keep the system in a good working condition. For dependency of resourcecs on a single
+system reduces the services making the working activites less effective.
+
+2. The distribution algorithm is called Round Robin.
+   This algorithm is the most commonly implemented. It works by using each server behind the load balancer in
+   turns, according to their weights. It's also probably the smoothest and most fair algorithm as the servers'
+   processing time stays equally distributed.
+
+3. My HAproxy load balancer is using Active-Activer which means all the servers are working simultaneously, just like
+   Round-Robin, where 1st client go to the first server and the second goes to the second server making the servers
+   to balance in service to avoid traffic.
+   In Active-Active Load-Balancer, the server work simultaneously but in the Active-Passive one server works all the
+   time but if a failout accur then the other server take control of the current working activities.
+
+4. Master-slave replication enables data from one database server (the master) to be replicated to one or more other
+   database servers (the slaves)
